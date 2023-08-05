@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optical CRM</title>
+
+  <link rel="stylesheet" href="../../assets/css/bulma.min.css" />
+</head>
+<body>
+  <section class="section">
+    <h1 class="title">Add Frame</h1>
+
+    <div class="box mt-3">
+      <form>
+        <div class="field">
+          <label for="frame">Frame</label>
+          <input class="input" type="text" id="frame" />
+        </div>
+        <div class="field">
+          <label for="brand">Brand</label>
+          <input class="input" type="text" id="brand" />
+        </div>
+        <div class="field">
+          <label for="model">Model</label>
+          <input class="input" type="text" id="model" />
+        </div>
+        <div class="field">
+          <label for="size">Size</label>
+          <input class="input" type="text" id="size" />
+        </div>
+        <input type="hidden" id="frmId" value="" />
+
+        <button class="button is-primary" id="btnGet">Get Frames</button>
+        <button class="button is-primary" id="btnSave">Save Frame</button>
+      </form>
+    </div>
+
+    <div class="box mt-3">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Frame</th>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Size</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="tbFrames">
+
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <script src="mainView.js"></script>
+
+</body>
+</html>
